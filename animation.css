@@ -1,0 +1,39 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header nav a, nav ul li, .button, #main-section div, .photo {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+#logo {
+    animation-delay: 0.2s;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.4s; }
+nav ul li:nth-child(2) { animation-delay: 0.6s; }
+nav ul li:nth-child(3) { animation-delay: 0.8s; }
+nav ul li:nth-child(4) { animation-delay: 1s; }
+nav ul li:nth-child(5) { animation-delay: 1.2s; }
+
+.button {
+    animation-delay: 1.4s;
+}
+
+#left-div p:first-child { animation-delay: 1.6s; }
+#left-div h1 { animation-delay: 1.8s; }
+#left-div p:nth-of-type(2) { animation-delay: 2s; }
+#icon-list { animation-delay: 2.2s; }
+#left-div .button { animation-delay: 2.4s; }
+
+.photo {
+    animation-delay: 2.6s;
+}

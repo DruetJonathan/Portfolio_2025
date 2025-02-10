@@ -2,25 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://kit.fontawesome.com/2549b07691.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-       <nav>
-           <a href="" id="logo">
-               <span id="left">PORT</span>
-               <span id="right">FOLIO</span>
-           </a>
-           <ul>
-               <li><a href="">HOME</a></li>
-               <li><a href="">ABOUT ME</a></li>
-               <li><a href="">PROJECTS</a></li>
-               <li><a href="">SKILLS</a></li>
-               <li><a href="">CONTACT ME</a></li>
-           </ul>
-           <a href="" id="follow_me_button">Follow me</a>
-       </nav>
-    </header>
+<header>
+    <nav>
+        <a href="" id="logo">
+            <span id="left">PORT</span>
+            <span id="right">FOLIO</span>
+        </a>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="">SKILLS</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">CONTACT ME</a></li>
+        </ul>
+        <a href="" class="button">Follow me</a>
+    </nav>
+</header>
+<section id="main-section">
+    <div id="left-div">
+        <p>Hello, my name is</p>
+        <h1>Jonathan <span class="colored">Druet</span></h1>
+        <p>I'm a <span class="colored">FullStack Developer</span></p>
+        <ul id="icon-list">
+            <li>
+                <a href="https://www.linkedin.com/in/jonathan-druet/">
+                    <i class="fa-brands fa-linkedin-in fa-2xs"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/DruetJonathan">
+                    <i class="fa-brands fa-github fa-2xs"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:jonathandruet2@gmail.com">
+                    <i class="fa-solid fa-envelope fa-2xs"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="button"><a download href="./assets/document/Jonathan_Curriculum_vitae_2025.pdf">
+            DOWNLOAD CV
+        </a></p>
+    </div>
+    <div id="right-div">
+        <img src="./assets/images/avatar.png" alt="Photo" class="photo" draggable="false">
+    </div>
+</section>
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>
+        Hi! I’m Druet Jonathan, a 24-year-old developer from Liège, Belgium. I have experience in both front-end and
+        back-end development, with an initial training in Java, Angular, and Spring. Currently, I’m pursuing a
+        bachelor's degree in IT management to deepen my skills. Passionate about coding and problem-solving, I enjoy
+        building efficient and user-friendly applications. Always eager to learn and collaborate, I’m open to new
+        opportunities and discussions in the tech world!
+    </p>
+</section>
+<section id="skills">
+    <div class="container-skill">
+        <h3><span class="colored">Software</span> <br/><span class="underline-colored">Development</span></h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet autem commodi
+    </div>
+    <div class="container-skill">
+        <h3>Software <br/>Development</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet autem commodi
+    </div>    <div class="container-skill">
+    <h3>Software <br/>Development</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet autem commodi
+</div>
+
+</section>
 </body>
 </html>
