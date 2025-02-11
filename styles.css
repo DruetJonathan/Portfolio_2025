@@ -129,39 +129,7 @@ header {
         font-weight: bold;
         font-size: 3rem;
 
-        #icon-list {
-            display: flex;
-            gap: 20px;
-            list-style-type: none;
-            padding-left: 0;
 
-            li {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 25px;
-                height: 25px;
-                border: 2px solid var(--second-color);
-                border-radius: 100%;
-                padding: 10px;
-                color: var(--second-color);
-                transition: all 0.3s ease-in;
-
-                &:hover {
-                    transform: translateY(-5px);
-                    background-color: var(--second-color);
-                    color: var(--primary-color);
-                    transition: all 0.3s ease-in;
-
-                }
-
-                a {
-                    i {
-                        font-size: 1.6rem;
-                    }
-                }
-            }
-        }
     }
 
     #right-div {
@@ -172,9 +140,46 @@ header {
 
         .photo {
             height: 50%;
-            border-radius: 50%;
-            -fit: cover;
-            box-shadow: 0px 5px 10px var(--second-color);
+            /*border-radius: 50%;*/
+            box-shadow: 0 5px 10px var(--second-color);
+        }
+    }
+}
+
+.flex-center-list{
+    justify-content: center !important;
+}
+
+.icon-list {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border: 2px solid var(--second-color);
+        border-radius: 100%;
+        padding: 10px;
+        color: var(--second-color);
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            transform: translateY(-5px);
+            background-color: var(--second-color);
+            color: var(--primary-color);
+            transition: all 0.3s ease-in;
+
+        }
+
+        a {
+            i {
+                font-size: 1.6rem;
+            }
         }
     }
 }
@@ -188,49 +193,68 @@ header {
     align-items: center;
     text-align: center;
     font-size: 2rem;
+    box-shadow: 0 10px 25px var(--second-color);
 
     p {
+        text-align: justify;
         line-height: 60px;
         width: 50%;
     }
 }
 
 #skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
     padding: 60px 10%;
     background-color: var(--third-color);
 
-    .container-skill {
-        background: var(--fourth-color);
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-        border-left: 5px solid var(--primary-color);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    h3{
+        font-size: 3rem;
         text-align: center;
-        max-width: 300px;
+        margin-bottom: 150px;
+    }
 
-        &:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-        }
+    #main-container-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
 
-        & h3 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
+        .container-skill {
+            background: var(--fourth-color);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--second-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            max-width: 400px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
-        & p {
-            font-size: 1.1rem;
-            color: #333;
-            line-height: 1.6;
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                color: var(--primary-color);
+                margin-bottom: 15px;
+            }
+
+            p.description {
+                font-size: 1.5rem;
+                color: var(--primary-color);
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+
         }
     }
+
 
 }
 
